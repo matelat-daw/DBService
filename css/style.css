@@ -1,0 +1,35 @@
+table
+{
+    border-collapse: unset;
+    border: 1px solid red;
+    font-size: 1.33rem;
+    width: 90%;
+}
+
+tr, th, td
+{
+    border: 1px solid blue;
+    font-size: 1.33rem;
+}
+
+button, input, span, label
+{
+    font-size: 1.33rem;
+}
+
+.blue
+{
+    font-size: 1.33rem;
+    color: blue;
+}
+
+.red
+{
+    font-size: 1.33rem;
+    color: red;
+}
+
+.center
+{
+    text-align: center;
+}
