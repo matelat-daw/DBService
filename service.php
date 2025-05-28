@@ -76,14 +76,12 @@ switch (true) {
             $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
             if(mail($email, $subject, $message, $headers))
             {
-                echo 'Se ha enviado un mensaje a tu cuenta de E-mail.';
+                response(200, "Se Ha Agregado Correctamente El Usuario: ", $name);
             }
             else
             {
-                echo "Error al enviar el mensaje si vuelves a intentarlo y vuelve a dar error, por favor escribe a matelat@gmail.com";
+                response(300, "Algo Ha Fallado, No Se Ha Podido Agregar el Usuario: ", $name);
             }
-
-            response(200, "Se Ha Agregado Correctamente El Usuario: ", $name);
         } else {
             response(300, "Algo Ha Fallado, No Se Ha Podido Agregar el Usuario: ", $name);
         }

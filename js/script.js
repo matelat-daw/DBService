@@ -63,8 +63,9 @@ function showImg(src)
 
 function toast(warn, ttl, msg) // Función para mostrar el Dialogo con los mensajes de alerta, recibe, Código, Título y Mensaje.
 {
-    var title = document.getElementById("title"); // Asigno a la variable title el h4 con id title.
-    var message = document.getElementById("message"); // Asigno a la variable message el h5 con id message;
+    let alerta = document.getElementById("alerta"); // La ID del botón del dialogo.
+    let title = document.getElementById("title"); // Asigno a la variable title el h4 con id title.
+    let message = document.getElementById("message"); // Asigno a la variable message el h5 con id message;
     if (warn == 1) // Si el código es 1, es una alerta.
     {
         title.style.backgroundColor = "#000000"; // Pongo los atributos, color de fondo negro.
